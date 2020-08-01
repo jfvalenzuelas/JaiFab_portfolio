@@ -1,0 +1,38 @@
+{% extends 'portfolio/base.html'%}
+{% block content %}
+
+{% load static %}
+<hr>
+<div class="row mb-4 align-item-stretch">
+    <div class="col col-md-3 mx-auto my-auto">
+        <img src="{% static 'portfolio/profile-picture.jpg' %}" class="d-flex mx-auto" width=150 height=200>
+    </div>
+    <div class="col-lg-9 col-md-9 mx-auto my-auto">
+        <p>Hi! It's nice to have you here!</p><br>
+        <p>I wanted to share some Apps and interesting stuff with you.</p><br>
+        <p>You can also have access to my Blog and read some of my thoughts.</p>
+    </div>
+</div>
+<hr>
+<div class="row justify-content-center">
+    <div class="col-lg-12 d-flex align-items-stretch mb-4 justify-content-center">
+        <h2 class="text-center">Apps</h2>
+    </div>
+    {% for project in projects %}
+        <div class="col-lg-2 col-md-4 col-sm-4 d-flex align-items-stretch mb-3">
+            <div class="card d-block mx-auto" style="width: 18rem;">
+                <img src="{{ project.image.url }}" class="card-img-top" alt="">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description|striptags|truncatechars:40 }}</p>
+                    {% if project.url %}
+                        <a href="{{ project.url }}" class="btn btn-primary mx-auto mt-auto">Read more</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<hr>
+
+{% endblock %}
