@@ -1,0 +1,29 @@
+:root {
+    --moonless-night: #2F2B32;
+    --lime-green: #A7BF2E;
+    --white-desert: #FAF8ED;
+    --orange-soda: #F95A37;
+
+    --prussian-blue: #13293D;
+    --sapphire-blue: #006496;
+    --celadon-blue: #247BA0;
+    --carolina-blue: #1B98E0;
+    --azure-white: #E8F1F2;
+
+    --ghost-white: #FBFBFF;
+    --dark-pastel-green: #20BF55;
+    --cyan-process: #01BAEF;
+    --sonic-silver: #757575;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--moonless-night);
+    background-color: var(--ghost-white);
+}
+
+hr {
+    background-color: var(--sonic-silver);
+}
+
+
