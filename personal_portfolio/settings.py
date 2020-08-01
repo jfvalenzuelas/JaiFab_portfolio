@@ -25,7 +25,7 @@ SECRET_KEY = 'colxpad73(7u^*u%ld*vb_yfzg4vudfde)%jiw@7r8ykc$2!+6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.jaifab.com']
 
 
 # Application definition
