@@ -18,14 +18,17 @@
     <title>JaiFab</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'portfolio/vector-logo.svg' %}" width=60 height=80></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg main-nav mb-4">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'portfolio/vector-logo.svg' %}" width=60 height=80>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar icon-bar-1"></span>
+                        <span class="icon-bar icon-bar-2"></span>
+                        <span class="icon-bar icon-bar-3"></span>
+                    </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ml-auto text-uppercase f1">
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -35,9 +38,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% static 'portfolio/resume.pdf' %}" target="_blank">Resume</a>
             </li>
-            </ul>
+        </ul>
         </div>
     </nav>
+
     <div class="container-fluid">
         {% block content %}{% endblock %}
     </div>
