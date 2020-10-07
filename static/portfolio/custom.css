@@ -14,12 +14,24 @@
     --dark-pastel-green: #20BF55;
     --cyan-process: #01BAEF;
     --sonic-silver: #757575;
+
+    --dark-night: #2d2d40;
+    --purple-blue: #3d58c1;
+    --grape: #75317d;
+    --dark-grape: #400e42;
+    --light-grape: #9954ad;
+
+    --light-sky: #a0d2eb;
+    --cloud-white: #e5eaf5;
+    --lavender: #d0bdf4;
+    --grape-sweet: #8458b3;
+    --wet-concrete: #494d5f;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: var(--moonless-night);
-    background-color: var(--ghost-white);
+    color: var(--cloud-white);
+    background-color: var(--wet-concrete);
 }
 
 hr {
