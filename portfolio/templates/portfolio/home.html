@@ -31,7 +31,7 @@
                         <div class="col-sm-8">
                             <div class="card-body">
                                 <h3> {{ project.title }} </h3>
-                                <p> {{ project.description|striptags|truncatechars:60 }} </p>
+                                <p> {{ project.description|striptags|truncatechars:140 }} </p>
                                 <a href="{{ project.url }}" target="_blank">
                                     <button class="btn btn-primary">Explore</button>
                                 </a>
