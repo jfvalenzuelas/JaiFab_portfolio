@@ -62,11 +62,13 @@ a:hover {
 .btn-primary-custom {
     background-color: var(--logo-blue);
     color: var(--cloud-white);
+    border: 0;
 }
 
 .btn-primary-custom:hover {
-    filter: brightness(1.2);
+    filter: brightness(0.9);
     color: var(--cloud-white);
+    border: 0;
 }
 
 .grow {
