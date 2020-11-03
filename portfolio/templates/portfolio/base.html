@@ -30,14 +30,20 @@
                         </button>
             <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="navbar-nav ml-auto text-uppercase f1">
-                <li class="nav-item active">
+                <li class="nav-item my-auto active">
                     <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item my-auto">
                     <a class="nav-link" href="{% url 'blog:all_entries' %}">Blog</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item my-auto">
                     <a class="nav-link" href="{% static 'portfolio/resume.pdf' %}" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="https://github.com/jfvalenzuelas" target="_blank"><img src="{% static 'portfolio/path2.png' %}" width="20" height="20"></a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link" href="https://www.linkedin.com/in/jaimefvs/" target="_blank"><img src="{% static 'portfolio/LI-In-Bug.png' %}" width="25" height="20"></a>
                 </li>
             </ul>
             </div>
